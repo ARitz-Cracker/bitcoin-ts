@@ -171,5 +171,25 @@
       "**/*.spec.helper.js",
       "**/*.spec.debug.js"
     ]
+  },
+  "browserRequirifier": {
+    "include": "build/main/lib",
+    "exclude": [
+      "build/main/lib/crypto/hash.browser.bench.js",
+      "build/main/lib/crypto/sha1.bench.js",
+      "build/main/lib/crypto/sha256.bench.js",
+      "build/main/lib/crypto/sha512.bench.js",
+      "build/main/lib/crypto/hash.bench.helper.js",
+      "build/main/lib/crypto/hash.spec.helper.js",
+      "build/main/lib/crypto/ripemd160.spec.js",
+      "build/main/lib/crypto/secp256k1.spec.js",
+      "build/main/lib/crypto/hash.browser.bench.helper.js",
+      "build/main/lib/crypto/ripemd160.bench.js",
+      "build/main/lib/crypto/secp256k1.bench.js",
+      "build/main/lib/crypto/secp256k1-types.js",
+      "build/main/lib/crypto/sha1.spec.js",
+      "build/main/lib/crypto/sha256.spec.js",
+      "build/main/lib/crypto/sha512.spec.js"
+    ]
   }
 }
