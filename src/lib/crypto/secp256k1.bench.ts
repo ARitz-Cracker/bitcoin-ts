@@ -1,24 +1,24 @@
-/* eslint-disable functional/no-expression-statement, functional/no-let, @typescript-eslint/init-declarations, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unused-vars, functional/no-expression-statement, functional/no-let, @typescript-eslint/init-declarations, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 import { randomBytes } from 'crypto';
 
 import test from 'ava';
 import suite from 'chuhai';
 import * as elliptic from 'elliptic';
 import * as secp256k1Node from 'secp256k1';
+
 import { instantiateSecp256k1, Secp256k1 } from '../lib';
-const binToHex = function(buff: Uint8Array){
+
+const binToHex = (buff: Uint8Array) => {
   if(Buffer.isBuffer(buff)){
     return buff.toString("hex");
   }
   return Buffer.from(buff.buffer, buff.byteOffset, buff.byteLength).toString("hex");
 }
 const privateKeyLength = 32;
-const generatePrivateKey = function(secp256k1: Secp256k1){
-  // eslint-disable-next-line functional/no-let, @typescript-eslint/init-declarations
+const generatePrivateKey = (secp256k1: Secp256k1) => {
   let maybeKey: Uint8Array;
   // eslint-disable-next-line functional/no-loop-statement
   do {
-    // eslint-disable-next-line functional/no-expression-statement
     maybeKey = randomBytes(privateKeyLength);
   } while (!secp256k1.validatePrivateKey(maybeKey));
   return maybeKey;

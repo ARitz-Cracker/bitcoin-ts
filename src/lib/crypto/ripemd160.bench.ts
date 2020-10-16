@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { instantiateRipemd160, Ripemd160 } from '../lib';
 
 import { benchmarkHashingFunction } from './hash.bench.helper';

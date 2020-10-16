@@ -1,5 +1,5 @@
 /* global Buffer */
-/* eslint-disable functional/no-expression-statement */
+/* eslint-disable functional/no-expression-statement, @typescript-eslint/no-unused-vars */
 import { createHash } from 'crypto';
 import { readFileSync } from 'fs';
 import { join } from 'path';

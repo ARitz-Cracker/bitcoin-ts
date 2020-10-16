@@ -1,5 +1,5 @@
 /* global window, crypto */
-/* eslint-disable functional/no-let, @typescript-eslint/init-declarations, functional/no-expression-statement, functional/no-conditional-statement */
+/* eslint-disable @typescript-eslint/no-unused-vars, functional/no-let, @typescript-eslint/init-declarations, functional/no-expression-statement, functional/no-conditional-statement */
 import * as asmCrypto from 'asmcrypto.js';
 import suite from 'chuhai';
 import * as hashJs from 'hash.js';
@@ -20,7 +20,6 @@ declare const benchComplete: () => void;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const isUint8Array = (array: any): array is Uint8Array =>
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   array?.constructor?.name === 'Uint8Array';
 
 const compare = (a?: Uint8Array, b?: Uint8Array) => {

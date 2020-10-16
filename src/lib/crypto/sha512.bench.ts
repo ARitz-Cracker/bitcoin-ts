@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { instantiateSha512, Sha512 } from '../lib';
 
 import { benchmarkHashingFunction } from './hash.bench.helper';

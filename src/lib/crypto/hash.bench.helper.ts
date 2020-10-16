@@ -1,5 +1,5 @@
 /* global Buffer */
-/* eslint-disable functional/no-let, @typescript-eslint/init-declarations, functional/no-expression-statement, functional/no-conditional-statement */
+/* eslint-disable @typescript-eslint/no-unused-vars, functional/no-let, @typescript-eslint/init-declarations, functional/no-expression-statement, functional/no-conditional-statement */
 import { createHash, randomBytes } from 'crypto';
 
 import * as asmCrypto from 'asmcrypto.js';

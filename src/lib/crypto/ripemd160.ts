@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { base64ToBin } from '../base64tobin';
 import {
   HashFunction,
   instantiateRustWasm,
   ripemd160Base64Bytes,
 } from '../bin/bin';
-import { base64ToBin } from '../base64tobin';
 
 export interface Ripemd160 extends HashFunction {
   /**

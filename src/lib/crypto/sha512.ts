@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { base64ToBin } from '../base64tobin';
 import {
   HashFunction,
   instantiateRustWasm,
   sha512Base64Bytes,
 } from '../bin/bin';
-import { base64ToBin } from '../base64tobin';
 
 export interface Sha512 extends HashFunction {
   /**

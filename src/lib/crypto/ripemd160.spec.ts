@@ -1,4 +1,4 @@
-/* eslint-disable functional/no-expression-statement, @typescript-eslint/no-magic-numbers */
+/* eslint-disable functional/no-expression-statement, @typescript-eslint/no-magic-numbers, @typescript-eslint/no-unused-vars */
 import {
   getEmbeddedRipemd160Binary,
   instantiateRipemd160,

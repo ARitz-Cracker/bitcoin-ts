@@ -1,4 +1,4 @@
-/* eslint-disable functional/no-conditional-statement, functional/no-expression-statement, functional/no-throw-statement */
+/* eslint-disable @typescript-eslint/no-unused-vars, functional/no-conditional-statement, functional/no-expression-statement, functional/no-throw-statement */
 import {
   CompressionFlag,
   ContextFlag,

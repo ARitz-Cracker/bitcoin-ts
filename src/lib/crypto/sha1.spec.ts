@@ -1,4 +1,4 @@
-/* eslint-disable functional/no-expression-statement, @typescript-eslint/no-magic-numbers */
+/* eslint-disable @typescript-eslint/no-unused-vars, functional/no-expression-statement, @typescript-eslint/no-magic-numbers */
 import {
   getEmbeddedSha1Binary,
   instantiateSha1,

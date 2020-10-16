@@ -1,5 +1,6 @@
-import { HashFunction, instantiateRustWasm, sha1Base64Bytes } from '../bin/bin';
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { base64ToBin } from '../base64tobin';
+import { HashFunction, instantiateRustWasm, sha1Base64Bytes } from '../bin/bin';
 
 export interface Sha1 extends HashFunction {
   /**

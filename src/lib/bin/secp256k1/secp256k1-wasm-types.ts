@@ -4,7 +4,7 @@
  * bitflags used in secp256k1's public API (translated from secp256k1.h)
  */
 
-/* eslint-disable no-bitwise, @typescript-eslint/no-magic-numbers */
+/* eslint-disable no-bitwise, @typescript-eslint/no-magic-numbers, @typescript-eslint/prefer-literal-enum-member */
 /** All flags' lower 8 bits indicate what they're for. Do not use directly. */
 // const SECP256K1_FLAGS_TYPE_MASK = (1 << 8) - 1;
 const SECP256K1_FLAGS_TYPE_CONTEXT = 1 << 0;
@@ -109,7 +109,6 @@ export interface Secp256k1Wasm {
    */
   readonly free: (pointer: number) => number;
 
-  // eslint-disable-next-line functional/no-mixed-type
   readonly heapU32: Uint32Array;
   readonly heapU8: Uint8Array;
   readonly instance: WebAssembly.Instance;
@@ -118,7 +117,6 @@ export interface Secp256k1Wasm {
    * Allocates the given number of bytes in WebAssembly memory.
    * @param malloc - the number of bytes to allocate
    */
-  // eslint-disable-next-line functional/no-mixed-type
   readonly malloc: (bytes: number) => number;
 
   /**
