@@ -1,5 +1,5 @@
 {
-  "name": "cryptowasm",
+  "name": "@aritz-cracker/cryptowasm",
   "version": "1.18.0",
   "description": "ultra-lightweight library for Bitcoin, Bitcoin Cash, and Bitauth",
   "main": "build/main/index.js",
