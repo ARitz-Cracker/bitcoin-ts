@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle, max-params, @typescript-eslint/naming-convention */
 // cSpell:ignore memcpy, anyfunc
-import { base64ToBin } from '../../format/format';
+import { base64ToBin } from '../../base64tobin';
 
 import {
   CompressionFlag,
